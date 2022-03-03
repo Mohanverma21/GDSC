@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Fuel Point</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- Login Area -->
+   <div id="first">
+    
+    <! Login Area ---->
+    <div id="login-area" class="hide-div">
+        <h1 class="text-center">Welcome to Fuel Point.</h1>
+        <div class="submit-area">
+
+            <h3>Login</h3>
+            <input type="text" name="" class="form-control" placeholder="User Name">
+        </br>
+            <input type="password" name="" class="form-control" placeholder="Password">
+        </br>
+            <button id="login" class="btn btn-success">Enter</button>
+
+        </div>
+    </div>
+
+    <! Login Area End --->
+<!-- Deposit Area -->
+    <div style="text-align:center" id="transaction-area" class="hide-div">
+        <div  class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>₹<span id="currentDeposit">00</span></h2>
+                </div>
+            </div>
+          
+          
+          
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>liters</h5>
+                    <h2><span id="currentWithdraw">00</span>L</h2>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>₹<span id="currentBalance">1600</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    
+                    <h4>Deposit</h4>
+                    
+                    <input id="depositeAmount" type="text" class="form-control" placeholder="₹ for deposit">
+            </br>
+                    
+                        <h3 id="addDeposit" class="btn btn-success" onclick="gameon();">Deposit</h3>
+                        
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area1">
+                    <h4 style="text-align: center;">GO For Billing</h4>
+                    <h4> </h4>
+                    <div style="text-align:center">
+                 
+                        <button  type="submit" id="addWithdraw" class="btn btn-success" onclick="passvalues()">Bill</button>
+                </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<!-- bill area -->
+    <section id="finalSection" class="">
+    
+        <h1 id="heading"></h1>
+        <div>
+            <h2 id="amount"></h2>
+        </div>
+        <div >
+            <h2 id="petrolAmount"></h2>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
